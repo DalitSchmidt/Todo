@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Todo App</title>
+        <link href="http://fonts.googleapis.com/css?family=Handlee" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body id="todo">
+        <header>
+            <h1>My Task Board</h1>
+        </header>
+        <div id="form">
+            <div id="notebook">
+                <div class="main">
+                    <label title="Title">Title: </label>
+                    <input type="text" name="title" placeholder="Enter title..." title="Enter title..." maxlength="200">
+                </div>
+
+                <div class="main">
+                    <label title="Date">Date: </label>
+                    <input type="date" name="date" title="Enter date...">
+                </div>
+
+                <div class="main">
+                    <label title="Description">Description: </label>
+                    <textarea type="text" name="description" placeholder="Enter description..." title="Enter description..." maxlength="10000"></textarea>
+                </div>
+
+                <button title="Add Task">Add Task</button>
+            </div>
+        </div>
+
+        <div id="board"></div>
+
+        <!-- Trigger/Open The Modal -->
+        <!--<span>
+                <a id="myBtn" class="edit-icon">
+                    <i class="fa fa-pencil"></i>
+                </a>
+            </span>-->
+        <!--<button id="myBtn" class="">Open Modal</button>-->
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--<span class="close">&times;</span>-->
+
+                    <span>
+                        <a class="close">
+                            <i class="fa fa-remove"></i>
+                        </a>
+                    </span>
+
+                    <h2>Edit Your Task</h2>
+                </div>
+
+            <div class="modal-body">
+                <div class="main">
+                    <label title="Title">Title: </label>
+                    <input type="text" name="title" placeholder="Enter title..." title="Enter title..." maxlength="200">
+                </div>
+
+                <div class="main">
+                    <label title="Date">Date: </label>
+                    <input type="date" name="date" title="Enter date...">
+                </div>
+
+                <div class="main">
+                    <label title="Description">Description: </label>
+                    <textarea type="text" name="description" placeholder="Enter description..." title="Enter description..." maxlength="10000"></textarea>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button title="Save Task">Save Task</button>
+            </div>
+            </div>
+        </div>
+
+        <footer>
+            <h4><span id = "counter"></span></h4>
+        </footer>
+
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <script src="js/Task.js"></script>
+        <script src="js/TodoApp.js"></script>
+        <!--<script src="js/DomObject.js"></script>-->
+    </body>
+</html>

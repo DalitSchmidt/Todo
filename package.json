@@ -1,0 +1,25 @@
+{
+  "name": "movietask",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^2.3.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DalitSchmidt/Todo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DalitSchmidt/Todo/issues"
+  },
+  "homepage": "https://github.com/DalitSchmidt/Todo#readme",
+  "description": ""
+}
